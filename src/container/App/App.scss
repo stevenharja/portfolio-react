@@ -1,3 +1,17 @@
 .App {
+  padding: 6rem;
 
+  &__section {
+    margin: 12rem 6rem;
+  }
+
+  &__section-title {
+    &--right {
+      text-align: right;
+    }
+    &--left {
+      text-align: left;
+    }
+    font-size: 5rem;
+  }
 }

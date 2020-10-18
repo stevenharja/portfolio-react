@@ -1,0 +1,25 @@
+.Section {
+  margin: 6rem 0;
+
+  &__title {
+    &--right {
+      text-align: right;
+    }
+    &--left {
+      text-align: left;
+    }
+    font-size: 5rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50vh;
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    margin-right: 5rem;
+  }
+}

@@ -1,0 +1,65 @@
+@import "variables.scss";
+
+.EyesTrack {
+  position: relative;
+  overflow: hidden;
+  flex: 1 0 50%;
+  height: 100%;
+  box-shadow: -5px -5px 75px rgba($color-white, 0.8),
+    5px 5px 15px rgba($color-black, 0.4);
+  border-radius: 100px;
+
+  &__eye {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: block;
+    background-color: $color-white;
+    --left-eye: -125%;
+    --right-eye: 25%;
+    &--left {
+      transform: translate(var(--left-eye), -50%);
+    }
+    &--right {
+      transform: translate(var(--right-eye), -50%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      background-color: $color-black;
+      border-radius: 50%;
+      animation: movePupil 5s ease infinite;
+    }
+  }
+}
+
+@keyframes movePupil {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+
+  20% {
+    transform: translate(0, -50%);
+  }
+
+  40% {
+    transform: translate(-100%, -50%);
+  }
+
+  60% {
+    transform: translate(-50%, -50%);
+  }
+
+  80% {
+    transform: translate(-75%, -75%);
+  }
+}

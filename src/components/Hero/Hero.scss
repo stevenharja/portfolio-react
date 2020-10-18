@@ -1,0 +1,11 @@
+@import "variables.scss";
+.Hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__title {
+    color: $color-black;
+    font-size: 6rem;
+  }
+}

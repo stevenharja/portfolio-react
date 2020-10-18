@@ -1,13 +1,44 @@
+@import "variables.scss";
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $color-primary;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+::selection {
+  color: $color-primary;
+  background-color: $color-black;
+}
+
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  animation: drop 9s cubic-bezier(0.2, 0.81, 0.97, 0.09);
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(2000%);
+  }
 }
