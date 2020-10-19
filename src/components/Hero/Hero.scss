@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 .Hero {
   height: 70vh;
   display: flex;
@@ -7,5 +8,18 @@
   &__title {
     color: $color-black;
     font-size: 6rem;
+
+    @include respond(tab-land) {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }
+
+  @include respond(tab-land) {
+    height: 40vh;
+    flex-direction: column;
+  }
+  @include respond(tab-port) {
+    height: 60vh;
   }
 }

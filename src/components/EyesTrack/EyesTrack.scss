@@ -1,5 +1,5 @@
 @import "variables.scss";
-
+@import "mixins.scss";
 .EyesTrack {
   position: relative;
   overflow: hidden;
@@ -8,6 +8,15 @@
   box-shadow: -5px -5px 15px rgba($color-white, 0.8),
     5px 5px 15px rgba($color-black, 0.4);
   border-radius: 100px;
+
+  @include respond(tab-port) {
+    height: 50vh;
+    width: 80vw;
+  }
+
+  @include respond(phone) {
+    margin-bottom: 5rem;
+  }
 
   &__eye {
     position: absolute;
@@ -20,6 +29,10 @@
     background-color: $color-white;
     --left-eye: -125%;
     --right-eye: 25%;
+    @include respond(tab-land) {
+      width: 150px;
+      height: 150px;
+    }
     &--left {
       transform: translate(var(--left-eye), -50%);
     }

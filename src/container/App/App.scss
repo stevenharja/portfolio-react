@@ -1,8 +1,16 @@
+@import "mixins.scss";
 .App {
   padding: 6rem;
 
+  @include respond(tab-land) {
+    padding: 3rem;
+  }
+
   &__section {
     margin: 12rem 6rem;
+    @include respond(tab-land) {
+      margin: 0;
+    }
   }
 
   &__section-title {
@@ -13,5 +21,9 @@
       text-align: left;
     }
     font-size: 5rem;
+    @include respond(tab-land) {
+      font-size: 3rem;
+      text-align: center !important;
+    }
   }
 }

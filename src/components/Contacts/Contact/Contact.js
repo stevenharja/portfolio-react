@@ -6,7 +6,7 @@ const contact = (props) => {
   return (
     <a className="Contact" href={props.url}>
       <div className="Contact__img-box">
-        <img src={logoUrl} className="Contact__img" />
+        <img src={logoUrl} className="Contact__img" alt={props.title} />
       </div>
       <div className="Contact__text">{props.title}</div>
     </a>

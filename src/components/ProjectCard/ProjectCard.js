@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProjectCard.scss";
-import Fade from "react-reveal/Fade";
 
 const projectCard = (props) => {
   let projectImage;

@@ -6,7 +6,12 @@ import Fade from "react-reveal/Fade";
 const contacts = (props) => {
   let contactElements = props.contacts.map((contact) => {
     return (
-      <Contact title={contact.title} url={contact.url} svg={contact.svg} />
+      <Contact
+        title={contact.title}
+        url={contact.url}
+        svg={contact.svg}
+        key={contact.title}
+      />
     );
   });
   return (

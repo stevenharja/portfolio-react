@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.scss";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Hero from "../../components/Hero/Hero";
-import Footer from "../../components/Footer/Footer";
 import Section from "../../components/Section/Section";
 import EyesTrack from "../../components/EyesTrack/EyesTrack";
 import Contacts from "../../components/Contacts/Contacts";
@@ -123,6 +122,7 @@ class App extends Component {
             urlProject={project.urlProject}
             urlGithub={project.urlGithub}
             urlImage={project.urlImage}
+            key={project.name}
           />
         );
       });
@@ -134,6 +134,7 @@ class App extends Component {
             title={section.title}
             paragraph={section.paragraph}
             animation={section.animation}
+            key={section.title}
           />
         );
       });
@@ -176,7 +177,6 @@ class App extends Component {
           {contacts}
           {quotenator}
         </div>
-        <Footer />
       </div>
     );
   }

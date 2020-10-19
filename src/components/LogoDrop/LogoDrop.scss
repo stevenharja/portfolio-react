@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "mixins.scss";
 .LogoDrop {
   position: relative;
   overflow: hidden;
@@ -8,6 +9,14 @@
   box-shadow: -5px -5px 75px rgba($color-white, 0.8),
     5px 5px 15px rgba($color-black, 0.4);
   border-radius: 100px;
+
+  @include respond(tab-land) {
+    height: 50vh;
+    width: 50vw;
+  }
+  @include respond(tab-port) {
+    width: 80vw;
+  }
   &__text {
     position: absolute;
     top: 50%;

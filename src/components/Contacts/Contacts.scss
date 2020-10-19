@@ -1,13 +1,21 @@
 @import "variables.scss";
+@import "mixins.scss";
 .Contacts {
   &__title {
     font-size: 5rem;
     text-align: right;
+    @include respond(tab-land) {
+      font-size: 3rem;
+      text-align: center !important;
+    }
   }
 
   &__box {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 }
