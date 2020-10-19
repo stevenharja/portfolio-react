@@ -6,6 +6,10 @@
     padding: 3rem;
   }
 
+  @include respond(sm-phone) {
+    padding: 1.5rem;
+  }
+
   &__section {
     margin: 12rem 6rem;
     @include respond(tab-land) {

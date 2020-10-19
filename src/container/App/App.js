@@ -12,39 +12,35 @@ class App extends Component {
   state = {
     projects: [
       {
-        name: "Project 1",
-        summary: "Project 1 made with SCSS, CSS, JS etc",
-        urlProject: "https://stevenharja.github.io/project-1",
-        urlGithub: "https://github.com/stevenharja/EVERFit",
-        urlImage: "project-1.png",
+        name: "Travelloging",
+        summary:
+          "Blogging-Oriented Website, Built With React And SCSS For Front-End, And Placeholder API For Blog Posts.",
+        urlProject: "https://stevenharja.github.io/travelloging-react/",
+        urlGithub: "https://github.com/stevenharja/travelloging-react",
+        urlImage: "travelloging.png",
       },
       {
-        name: "Project 2",
-        summary: "Project 2 made with SCSS, CSS, JS etc",
-        urlProject: "https://stevenharja.github.io/project-2",
+        name: "EVERFit",
+        summary:
+          "Health-Focused Website, Built With NodeJS As Back-End (See GitHub), And SCSS For Front-End.",
+        urlProject: "https://stevenharja.github.io/EVERFit-template/",
         urlGithub: "https://github.com/stevenharja/EVERFit",
-        urlImage: "project-1.png",
+        urlImage: "everfit.png",
       },
       {
-        name: "Project 3",
-        summary: "Project 3 made with SCSS, CSS, JS etc",
-        urlProject: "https://stevenharja.github.io/project-3",
-        urlGithub: "https://github.com/stevenharja/EVERFit",
-        urlImage: "project-1.png",
+        name: "Trust Motors",
+        summary: "Vehicle Showroom Themed, Built Using SCSS For Front-End",
+        urlProject: "https://stevenharja.github.io/trust-motors/",
+        urlGithub: "https://github.com/stevenharja/trust-motors",
+        urlImage: "trust-motors.png",
       },
       {
-        name: "Project 4",
-        summary: "Project 4 made with SCSS, CSS, JS etc",
-        urlProject: "https://stevenharja.github.io/project-4",
+        name: "COVID-19 Tracker",
+        summary:
+          "Using Disease.SH API, Developed A COVID-19 Tracker With React, SCSS, Leaflet Map",
+        urlProject: "https://stevenharja.github.io/covid19-tracker/",
         urlGithub: "https://github.com/stevenharja/EVERFit",
-        urlImage: "project-1.png",
-      },
-      {
-        name: "Project 5",
-        summary: "Project 5 made with SCSS, CSS, JS etc",
-        urlProject: "https://stevenharja.github.io/project-1",
-        urlGithub: "https://github.com/stevenharja/EVERFit",
-        urlImage: "project-1.png",
+        urlImage: "covid19tracker.png",
       },
     ],
     heroContent: {
@@ -54,7 +50,7 @@ class App extends Component {
       {
         title: "About Me",
         paragraph:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan convallis blandit. Morbi imperdiet vehicula lorem ut suscipit. Maecenas sollicitudin ultrices faucibus. Integer in porta mauris. Morbi molestie mattis ultricies. Aliquam vestibulum pulvinar volutpat. Etiam mattis rutrum neque. In consectetur ex mauris, quis viverra urna sollicitudin sed. Suspendisse tincidunt efficitur molestie. Pellentesque tincidunt vehicula sapien in consequat. Fusce in neque sem. In dictum ultricies augue ut finibus.",
+          "Hello there! My name is Steven Harjapramana, I am a self-developed, and continously learning web developer. My skills involves front-end development, using SASS(SCSS), React, CSS3, JavaScript. I am also familiar to back-end development, using NodeJS, CakePHP, PHP",
         animation: <EyesTrack />,
       },
     ],
@@ -97,6 +93,27 @@ class App extends Component {
         quote:
           "The greatest glory in living lies not in never falling, but rising every time we fall",
         person: "Nelson Mandella",
+      },
+      {
+        quote: "If there is no struggle, there is no progress",
+        person: "Frederick Douglass",
+      },
+      {
+        quote:
+          "We don't rise to the level of our expectation, we fall to the level of our training",
+        person: "David Goggins",
+      },
+      {
+        quote: "To learn to succeed, you must first learn to fail",
+        person: "Michael Jordan",
+      },
+      {
+        quote: "A person who never made a mistake never tried anything new.",
+        person: "Albert Einstein",
+      },
+      {
+        quote: "If we don't change, we don't grow, we aren't really living",
+        person: "Gail Sheehy",
       },
     ],
     quoteSelected: null,

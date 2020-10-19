@@ -22,4 +22,8 @@
   @include respond(tab-port) {
     height: 60vh;
   }
+
+  @include respond(sm-phone) {
+    height: 100vh;
+  }
 }

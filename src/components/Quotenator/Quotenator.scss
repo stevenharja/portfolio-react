@@ -15,8 +15,6 @@
   cursor: pointer;
   &:focus {
     outline: none;
-    box-shadow: inset -5px -5px 15px rgba($color-white, 0.8),
-      inset 5px 5px 15px rgba($color-black, 0.4);
   }
   &:hover {
     box-shadow: inset -5px -5px 15px rgba($color-white, 0.8),

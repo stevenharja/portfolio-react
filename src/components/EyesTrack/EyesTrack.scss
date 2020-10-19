@@ -33,6 +33,10 @@
       width: 150px;
       height: 150px;
     }
+    @include respond(sm-phone) {
+      width: 100px;
+      height: 100px;
+    }
     &--left {
       transform: translate(var(--left-eye), -50%);
     }
@@ -51,6 +55,11 @@
       background-color: $color-black;
       border-radius: 50%;
       animation: movePupil 5s ease infinite;
+
+      @include respond(sm-phone) {
+        width: 45px;
+        height: 45px;
+      }
     }
   }
 }
