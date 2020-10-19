@@ -1,0 +1,13 @@
+@import "variables.scss";
+.Contacts {
+  &__title {
+    font-size: 5rem;
+    text-align: right;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

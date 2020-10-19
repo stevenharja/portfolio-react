@@ -12,11 +12,11 @@ const projectCard = (props) => {
   }
   return (
     <div className="ProjectCard">
-      <Fade>
-        <div className="ProjectCard__img-box">{projectImage}</div>
-        <div className="ProjectCard__text">
-          <div className="ProjectCard__title">{props.name}</div>
-          <div className="ProjectCard__summary">{props.summary}</div>
+      <div className="ProjectCard__img-box">{projectImage}</div>
+      <div className="ProjectCard__text">
+        <div className="ProjectCard__title">{props.name}</div>
+        <div className="ProjectCard__summary">{props.summary}</div>
+        <div className="ProjectCard__links">
           <a
             className="ProjectCard__link"
             href={props.urlProject}
@@ -25,8 +25,16 @@ const projectCard = (props) => {
           >
             Live Website
           </a>
+          <a
+            className="ProjectCard__link"
+            href={props.urlGithub}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </div>
-      </Fade>
+      </div>
     </div>
   );
 };

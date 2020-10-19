@@ -9,11 +9,25 @@
   margin-bottom: 5rem;
   background-image: linear-gradient(
     to right,
-    $color-secondary-gradient,
-    $color-secondary-gradient-alt
+    $color-primary-gradient,
+    $color-primary-gradient-alt
   );
-  box-shadow: -5px -5px 75px rgba($color-white, 0.8),
-    5px 5px 15px rgba($color-black, 0.4);
+  &:nth-child(3n) {
+    background-image: linear-gradient(
+      to right,
+      $color-tertiary-gradient,
+      $color-tertiary-gradient-alt
+    );
+  }
+  &:nth-child(2n) {
+    background-image: linear-gradient(
+      to right,
+      $color-secondary-gradient,
+      $color-secondary-gradient-alt
+    );
+  }
+  box-shadow: -5px -5px 10px rgba($color-white, 0.8),
+    5px 5px 10px rgba($color-black, 0.4);
   transition: all 0.3s ease;
 
   &:hover {
@@ -26,12 +40,14 @@
     height: 30rem;
     position: relative;
     border-radius: 50px;
+    box-shadow: -5px -5px 10px rgba($color-white, 0.6),
+      5px 5px 10px rgba($color-black, 0.4);
   }
 
   &:hover &__img-box {
     transition: all 0.3s ease;
     transform: translateY(-0.5rem);
-    box-shadow: 0 50px 50px rgba($color-black, 0.1);
+    box-shadow: 0 0 10px rgba($color-black, 0.4);
   }
 
   &__img {
@@ -67,10 +83,29 @@
     padding: 0.5rem;
     border-radius: 10px;
     transition: all 0.3s;
+    box-shadow: -5px -5px 15px rgba($color-white, 0.4),
+      5px 5px 10px rgba($color-black, 0.4);
+
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
 
     &:hover {
-      transform: translateY(-0.5rem);
+      animation: jumpingText 1s linear infinite;
       box-shadow: 0 50px 50px rgba($color-black, 0.1);
     }
+  }
+}
+
+@keyframes jumpingText {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

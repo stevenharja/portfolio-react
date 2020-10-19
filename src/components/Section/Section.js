@@ -1,7 +1,6 @@
 import React from "react";
 import "./Section.scss";
 import Fade from "react-reveal/Fade";
-import EyesTrack from "../EyesTrack/EyesTrack";
 
 const section = (props) => {
   return (
