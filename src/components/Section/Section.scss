@@ -31,10 +31,10 @@
       flex-direction: column;
       justify-content: center;
       padding: 2rem 0;
-      height: 70vh;
+      height: 80vh;
     }
-    @include respond(sm-phone) {
-      height: 100vh;
+    @include respond(phone) {
+      height: 120vh;
     }
   }
 
@@ -43,15 +43,15 @@
     margin-right: 5rem;
     @include respond(tab-land) {
       margin-right: 2rem;
+      font-size: 1.15rem;
     }
     @include respond(tab-port) {
       text-align: center !important;
       margin-right: 0;
       margin-bottom: 3rem;
-      font-size: 1.25rem;
     }
-    @include respond(sm-phone) {
-      font-size: 1.15rem;
+    @include respond(phone) {
+      margin-bottom: 1rem;
     }
   }
 

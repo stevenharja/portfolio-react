@@ -12,7 +12,9 @@ const section = (props) => {
         <h2 className="Section__title Section__title--left">{props.title}</h2>
       </Fade>
       <div className="Section__content">
-        <div className="Section__text">{paragraphs}</div>
+        <Fade bottom>
+          <div className="Section__text">{paragraphs}</div>
+        </Fade>
         {props.animation}
       </div>
     </div>
