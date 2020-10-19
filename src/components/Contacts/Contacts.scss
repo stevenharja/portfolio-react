@@ -1,6 +1,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 .Contacts {
+  @include respond(sm-phone) {
+    padding-top: 6rem;
+  }
   &__title {
     font-size: 5rem;
     text-align: right;

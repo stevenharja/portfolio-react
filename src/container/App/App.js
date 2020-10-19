@@ -49,8 +49,11 @@ class App extends Component {
     sectionContent: [
       {
         title: "About Me",
-        paragraph:
-          "Hello there! My name is Steven Harjapramana, I am a self-developed, and continously learning web developer. My skills involves front-end development, using SASS(SCSS), React, CSS3, JavaScript. I am also familiar to back-end development, using NodeJS, CakePHP, PHP",
+        paragraph: [
+          "Hello there! My name is Steven Harjapramana",
+          " I am a web developer with a passion of learning. My skills involves front-end development (SASS, React, CSS3, JS) and back-end development (NodeJS, CakePHP, PHP, SQL).",
+          "A dedication for learning and growth makes me to who I am today. If you could provide me with an opportunity to work with you, then just know that I always give the best in everything I do.",
+        ],
         animation: <EyesTrack />,
       },
     ],
@@ -193,6 +196,7 @@ class App extends Component {
           {sections}
           {contacts}
           {quotenator}
+          <p class="App__copyright">Steven Harjapramana &copy; 2020. All Rights Reserved</p>
         </div>
       </div>
     );
